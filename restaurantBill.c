@@ -2,40 +2,20 @@
 
 //First Program
 
-int main( int argc, char **arg){
-	printf("Hello Feng\n");
-	printf("How are you?\n");
-
+int main(){
+	printf("Hi thanks for eating at our expensive restaurant, your bill is $88.67\n");
 
 //declarations
-int x;
-char y;
-double z;
+double meal = 88.67;
+double tax = 6.75/100*meal;
+double total_with_tax = tax + meal;
+double tip = 0.20*total_with_tax;
+double total_bill = meal + tax + tip ;
 
-//Assignments
-x = 3;
-y = 'B';
-z = 3.14;
-
-//Dec and Assignments
-int P = 2;
-
-printf("X = %d\n", x);
-printf("Y = %c\n", y); //%C print out value y as a character
-printf("z = %.2f\n", z);
-
-//X = 3
-x++; //post increment
-printf("X = %d\n", x);
-++x; //pre-increment
-printf("X = %d\n:", x);
-
-//X=5
-int a =4;
-int checkPre = ++x+a;
-int checkPost = a+x++;
-printf("checkPre = %d\n", checkPre);
-printf("checkPost = %d\n", checkPost);
-
-
+//charges displayed
+printf("Meal charge = %.2lf\n", meal);
+printf("Tax charge = %.2lf\n", tax);
+printf("Total with tax charge = %.2lf\n", total_with_tax);
+printf("Tip charge = %.2lf\n", tip);
+printf("Total bill charge = %.2lf\n", total_bill);
 }
