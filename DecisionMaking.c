@@ -1,23 +1,51 @@
-#include <stdio.h> //this is where printf() has been defined
+//IF, ELSE IF, ELSE - Decision Making
 
-//First Program
+#include <stdio.h>
 
-int main(){
-	printf("Hi thanks for eating at our expensive restaurant, your bill is $88.67\n");
 
-//declarations
-double meal = 88.67;
-double tax = 6.75/100*meal;
-double total_with_tax = tax + meal;
-double tip = 0.20*total_with_tax;
-double total_bill = meal + tax + tip ;
 
-//charges displayed
-printf("Meal charge = %.2lf\n", meal);
-printf("Tax charge = %.2lf\n", tax);
-printf("Total with tax charge = %.2lf\n", total_with_tax);
-printf("Tip charge = %.2lf\n", tip);
-printf("Total bill charge = %.2lf\n", total_bill);
+int main () {
 
+   /* local variable definition */
+
+   int a = 100;
+
+
+
+   /* check the boolean condition */
+
+   if( a == 10 ) {
+
+      /* if condition is true then print the following */
+
+      printf("Value of a is 10\n" );
+
+   } else if( a == 20 ) {
+
+      /* if else if condition is true */
+
+      printf("Value of a is 20\n" );
+
+   } else if( a == 30 ) {
+
+      /* if else if condition is true  */
+
+      printf("Value of a is 30\n" );
+
+   } else {
+
+      /* if none of the conditions is true */
+
+      printf("None of the values is matching\n" );
+
+   }
+
+
+
+   printf("Exact value of a is: %d\n", a );
+
+
+
+   return 0;
 
 }
